@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Quick links for Thrive2Gethr Chattahoochee Chapter — Registration, Instagram, and GroupMe.">
+    <title>Links | Thrive2Gethr Hooch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* ── Page Layout ── */
+        .links-page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 9rem 2rem 5rem;
+            background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,179,0,0.07) 0%, transparent 70%),
+                        var(--color-bg);
+        }
+
+        /* ── Hero text ── */
+        .links-hero {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .links-hero .badge {
+            margin-bottom: 1rem;
+        }
+
+        .links-hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2.4rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.75rem;
+            line-height: 1.1;
+        }
+
+        .links-hero p {
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        /* ── Cards container ── */
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            width: 100%;
+            max-width: 520px;
+        }
+
+        /* ── Individual link card ── */
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.35rem 1.8rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid var(--glass-border);
+            border-radius: 18px;
+            text-decoration: none;
+            color: var(--color-text-main);
+            font-family: var(--font-body);
+            transition: all var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle shimmer line on the left */
+        .link-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--card-accent, var(--color-primary));
+            border-radius: 4px 0 0 4px;
+            transition: width var(--transition-smooth);
+        }
+
+        .link-card:hover {
+            transform: translateY(-4px) scale(1.012);
+            border-color: var(--card-accent, var(--color-primary));
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
+                        0 0 0 1px var(--card-accent, var(--color-primary));
+        }
+
+        .link-card:hover::before {
+            width: 6px;
+        }
+
+        /* ── Logo wrapper ── */
+        .link-logo-wrap {
+            flex-shrink: 0;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background var(--transition-smooth), border-color var(--transition-smooth);
+        }
+
+        .link-card:hover .link-logo-wrap {
+            background: rgba(255,255,255,0.12);
+            border-color: var(--card-accent, var(--color-primary));
+        }
+
+        .link-logo-wrap svg,
+        .link-logo-wrap img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* ── Text block ── */
+        .link-text {
+            flex: 1;
+        }
+
+        .link-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.2rem;
+            transition: color var(--transition-fast);
+        }
+
+        .link-card:hover .link-title {
+            color: var(--card-accent, var(--color-primary));
+        }
+
+        .link-subtitle {
+            font-size: 0.88rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ── Arrow icon ── */
+        .link-arrow {
+            flex-shrink: 0;
+            opacity: 0.4;
+            transition: opacity var(--transition-fast), transform var(--transition-smooth);
+        }
+
+        .link-card:hover .link-arrow {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        /* ── Per-card accent colours ── */
+        .card-forms   { --card-accent: #4285F4; }   /* Google blue  */
+        .card-insta   { --card-accent: #E1306C; }   /* Instagram pink */
+        .card-groupme { --card-accent: #00AFF0; }   /* GroupMe blue */
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .links-page-wrapper {
+                padding: 8rem 1.25rem 4rem;
+            }
+            .link-card {
+                padding: 1.1rem 1.25rem;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="assets/logo small.png" alt="Thrive2Gethr Logo" class="brand-logo" loading="lazy">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#mission" class="nav-link">Mission</a>
+                <a href="index.html#impact" class="nav-link">Our Impact</a>
+                <a href="index.html#officers" class="nav-link">Team</a>
+                <a href="hours.html" class="nav-link">View Hours</a>
+                <a href="links.html" class="btn btn-ghost">Quick Links</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczhVJit0h7OQyJQpy7m7BqirlmOPqbTqS3_9Gs_ixCGz5xsA/viewform?usp=publish-editor"
+                    target="_blank" class="btn btn-primary">Log Volunteer Hours</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-links">
+            <a href="index.html#about" class="mobile-link">About Us</a>
+            <a href="index.html#mission" class="mobile-link">Mission</a>
+            <a href="index.html#impact" class="mobile-link">Our Impact</a>
+            <a href="index.html#officers" class="mobile-link">Team</a>
+            <a href="hours.html" class="mobile-link">View Hours</a>
+            <a href="links.html" class="mobile-link highlight">Quick Links</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSczhVJit0h7OQyJQpy7m7BqirlmOPqbTqS3_9Gs_ixCGz5xsA/viewform?usp=publish-editor"
+                target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Log Hours</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="links-page-wrapper">
+        <!-- Hero text -->
+        <div class="links-hero">
+            <span class="badge">Quick Links</span>
+            <h1>Everything in <span class="highlight">one place</span>.</h1>
+            <p>Find all the important links for Hooch Thrive2Gethr right here.</p>
+        </div>
+
+        <!-- Link Cards -->
+        <div class="links-grid">
+
+            <!-- 1. Registration Form -->
+            <a id="link-registration"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSd9dvPv-L4KTOqpBU7tv2B6ZFgVtwwEcZRvROMLVgpk0yIb0w/viewform?usp=dialog"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link-card card-forms">
+                <div class="link-logo-wrap">
+                    <!-- Google Forms logo SVG -->
+                    <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.6 66.85l3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3L38 61.5l-25-43.3L6.6 66.85z" fill="#0066da"/>
+                        <path d="M43.65 25L28.7 0H6.6C3.3 0 .3 1.75.05 5.1L0 6v66.85l6.6 3.8 31.05-53.8 6-10.25L43.65 25z" fill="#00ac47"/>
+                        <path d="M80.7 0H58.6L43.65 25l6 10.35 31.05 53.8 6.6-3.8V6C87.3 2.7 84.3.05 80.7 0z" fill="#ea4335"/>
+                        <path d="M43.65 25L18.65 68.3 43.65 78l25-9.7L43.65 25z" fill="#00832d"/>
+                        <path d="M68.65 68.3L43.65 25 38 35.35l5.65 9.8 18.65 32.3 6.35-9.15z" fill="#2684fc"/>
+                        <path d="M43.65 78l25-9.7-6.35-9.15L43.65 78z" fill="#0066da"/>
+                    </svg>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">Member Registration Form</div>
+                    <div class="link-subtitle">Sign up to join Thrive2Gethr</div>
+                </div>
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+
+            <!-- 2. Instagram -->
+            <a id="link-instagram"
+               href="http://Instagram.com/hooch_t2g"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link-card card-insta">
+                <div class="link-logo-wrap">
+                    <!-- Instagram logo SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#f09433"/>
+                                <stop offset="25%" style="stop-color:#e6683c"/>
+                                <stop offset="50%" style="stop-color:#dc2743"/>
+                                <stop offset="75%" style="stop-color:#cc2366"/>
+                                <stop offset="100%" style="stop-color:#bc1888"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="2" y="2" width="20" height="20" rx="5.5" ry="5.5" fill="url(#ig-grad)"/>
+                        <circle cx="12" cy="12" r="4.2" stroke="white" stroke-width="1.8" fill="none"/>
+                        <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+                    </svg>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">Instagram</div>
+                    <div class="link-subtitle">@hooch_t2g — follow us for updates</div>
+                </div>
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+
+            <!-- 3. GroupMe -->
+            <a id="link-groupme"
+               href="https://groupme.com/join_group/111857186/xVh8bEkl"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link-card card-groupme">
+                <div class="link-logo-wrap">
+                    <!-- GroupMe logo SVG -->
+                    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#00AFF0"/>
+                        <path d="M20 8C13.37 8 8 12.48 8 18c0 3.18 1.72 6.02 4.42 7.9L11 32l6.2-3.1c.9.18 1.84.28 2.8.28 6.63 0 12-4.48 12-10S26.63 8 20 8z" fill="white"/>
+                        <circle cx="14.5" cy="18" r="1.8" fill="#00AFF0"/>
+                        <circle cx="20" cy="18" r="1.8" fill="#00AFF0"/>
+                        <circle cx="25.5" cy="18" r="1.8" fill="#00AFF0"/>
+                    </svg>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">GroupMe</div>
+                    <div class="link-subtitle">Join our group chat</div>
+                </div>
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo small.png" alt="Thrive2Gethr Mini Logo" class="footer-logo">
+                <p class="footer-text">Building a future where everyone thrives—together.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-links">
+                    <a href="mailto:hoocht2g@gmail.com" class="footer-link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        hoocht2g@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/hooch_t2g/" target="_blank" class="footer-link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        @hooch_t2g
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Thrive2Gethr Chattahoochee Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

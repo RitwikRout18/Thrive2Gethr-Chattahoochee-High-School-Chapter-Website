@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thrive2Gethr is a non-profit organization empowering the next generation to take action against food insecurity.">
+    <title>Thrive2Gethr | Chattahoochee Chapter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Thrive2Gethr Chattahoochee Chapter",
+      "description": "Empowering students to combat food insecurity and thrive together.",
+      "sameAs": [
+        "https://www.instagram.com/hooch_t2g/"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <img src="assets/logo small.png" alt="Thrive2Gethr Logo" class="brand-logo" loading="lazy">
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#mission" class="nav-link">Mission</a>
+                <a href="#impact" class="nav-link">Our Impact</a>
+                <a href="#officers" class="nav-link">Team</a>
+                <a href="hours.html" class="nav-link">View Hours</a>
+                <a href="links.html" class="btn btn-ghost">Quick Links</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczhVJit0h7OQyJQpy7m7BqirlmOPqbTqS3_9Gs_ixCGz5xsA/viewform?usp=publish-editor"
+                    target="_blank" class="btn btn-primary">Log Volunteer Hours</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-links">
+            <a href="#about" class="mobile-link">About Us</a>
+            <a href="#mission" class="mobile-link">Mission</a>
+            <a href="#impact" class="mobile-link">Our Impact</a>
+            <a href="#officers" class="mobile-link">Team</a>
+            <a href="hours.html" class="mobile-link">View Hours</a>
+            <a href="links.html" class="mobile-link highlight">Quick Links</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSczhVJit0h7OQyJQpy7m7BqirlmOPqbTqS3_9Gs_ixCGz5xsA/viewform?usp=publish-editor"
+                target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Log Hours</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="intro" class="intro-bg-grid">
+        <canvas id="intro-canvas"></canvas>
+        <div class="hero slide-up">
+            <div class="hero-content">
+                <span class="badge">Chattahoochee Chapter</span>
+                <h1 class="hero-title">Shaping a future where everyone <span class="highlight">thrives</span>.</h1>
+                <p class="hero-subtitle">We empower the next generation to take action against food insecurity. By
+                    connecting donors, volunteers, and families, we transform empty plates into nourishing meals.</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSczhVJit0h7OQyJQpy7m7BqirlmOPqbTqS3_9Gs_ixCGz5xsA/viewform?usp=publish-editor"
+                        target="_blank" class="btn btn-primary btn-glow">Submit Hours</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/logo large (banner).png" alt="Thrive2Gethr Alternative Logo" class="hero-logo floating"
+                    loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section bg-light hidden">
+        <div class="container split-layout">
+            <div class="text-block">
+                <h2 class="section-heading">Who We Are</h2>
+                <p>At <strong>Thrive2Gethr</strong>, we are a non-profit organization dedicated to empowering the next
+                    generation to take action against food insecurity. By standing together—connecting donors,
+                    passionate volunteers, and local families—we step up to transform empty plates into nourishing,
+                    vital meals.</p>
+                <p>With every partnership formed and every resource shared, we build a resilient future where everyone
+                    thrives—together.</p>
+            </div>
+            <div class="image-block glass-panel">
+                <img src="assets/volunteer organizing food.png" alt="Volunteers organizing food resources"
+                    class="decorative-pic hover-zoom" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section mission-section hidden">
+        <div class="container container-center">
+            <h2 class="section-heading text-center">Our Mission</h2>
+            <p class="lead-text text-center text-max">As a proud chapter of the national Thrive2Gethr movement, our
+                mission is to empower every student to thrive mentally, emotionally, and socially. It also empowers you
+                to lead initiatives that combat food insecurity and reduce food waste in your community.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card glass-panel">
+                    <div class="mission-img-container">
+                        <img src="assets/empower.png" alt="Empower" class="mission-img">
+                    </div>
+                    <h3 class="stat-title">Empower</h3>
+                    <p class="stat-desc">Leading the next generation of changemakers.</p>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="mission-img-container">
+                        <img src="assets/connect.png" alt="Connect" class="mission-img">
+                    </div>
+                    <h3 class="stat-title">Connect</h3>
+                    <p class="stat-desc">Bridging gaps between community resources.</p>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="mission-img-container">
+                        <img src="assets/transform.png" alt="Transform" class="mission-img">
+                    </div>
+                    <h3 class="stat-title">Transform</h3>
+                    <p class="stat-desc">Turning awareness into real, nourishing meals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Gallery Section -->
+    <section id="impact" class="section gallery-section bg-light hidden">
+        <div class="container split-layout alternate">
+            <div class="image-block glass-panel">
+                <img src="assets/community impact.png" alt="Thrive2Gethr community impact"
+                    class="decorative-pic hover-zoom" loading="lazy">
+            </div>
+            <div class="text-block">
+                <h2 class="section-heading">Make a Real Impact</h2>
+                <p>Volunteering with Hooch Thrive2Gethr isn't just about logging hours—it's about making a profound
+                    difference in your local community. Each student has the power to tackle food waste and support
+                    families in need.</p>
+                <div class="expandable-events-box margin-top">
+                    <div class="events-box-trigger">
+                        <span>View images from past events</span>
+                        <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <ul class="events-list">
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1hvdi40zBw41yF7gfLDdzchdEKhXvtpa8" target="_blank" class="event-link">
+                                Findley Oaks Event 2025
+                                <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1k3peVQseC79CNgV5DHHtCeMKxhGj0KmC?usp=sharing" target="_blank" class="event-link">
+                                Chattahoochee High Event 2026
+                                <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Officers Section -->
+    <section id="officers" class="section officers-section hidden">
+        <div class="container container-center">
+            <h2 class="section-heading text-center">Meet Our Team</h2>
+
+            <div class="officers-grid">
+                <!-- Abhiram Kothapalli -->
+                <div class="officer-card glass-panel">
+                    <h3 class="officer-name">Abhiram Kothapalli</h3>
+                    <p class="officer-title">Founder & President</p>
+                    <div class="officer-info-container">
+                        <div class="officer-info">
+                            <p>Class of 2027 @ Chattahoochee High School</p>
+                            <a href="mailto:abhiramkothapalli123@gmail.com">abhiramkothapalli123@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tharakram Nallan -->
+                <div class="officer-card glass-panel">
+                    <h3 class="officer-name">Tharakram Nallan</h3>
+                    <p class="officer-title">Co-Founder & Vice President</p>
+                    <div class="officer-info-container">
+                        <div class="officer-info">
+                            <p>Class of 2027 @ Chattahoochee High School</p>
+                            <a href="mailto:tharakram.nallan@gmail.com">tharakram.nallan@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ritwik Rout -->
+                <div class="officer-card glass-panel">
+                    <h3 class="officer-name">Ritwik Rout</h3>
+                    <p class="officer-title">Treasurer & Web Designer</p>
+                    <div class="officer-info-container">
+                        <div class="officer-info">
+                            <p>Class of 2027 @ Chattahoochee High School</p>
+                            <a href="mailto:ritwikrout18@gmail.com">ritwikrout18@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Leslie Hao -->
+                <div class="officer-card glass-panel">
+                    <h3 class="officer-name">Leslie Hao</h3>
+                    <p class="officer-title">Secretary</p>
+                    <div class="officer-info-container">
+                        <div class="officer-info">
+                            <p>Class of 2027 @ Chattahoochee High School</p>
+                            <a href="mailto:lesliehao99@gmail.com">lesliehao99@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duncan Kim -->
+                <div class="officer-card glass-panel">
+                    <h3 class="officer-name">Duncan Kim</h3>
+                    <p class="officer-title">Outreach</p>
+                    <div class="officer-info-container">
+                        <div class="officer-info">
+                            <p>Class of 2027 @ Chattahoochee High School</p>
+                            <a href="mailto:duncankim345@gmail.com">duncankim345@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo small.png" alt="Thrive2Gethr Mini Logo" class="footer-logo">
+                <p class="footer-text">Building a future where everyone thrives—together.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-links">
+                    <a href="mailto:hoocht2g@gmail.com" class="footer-link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        hoocht2g@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/hooch_t2g/" target="_blank" class="footer-link">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        @hooch_t2g
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Thrive2Gethr Chattahoochee Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
